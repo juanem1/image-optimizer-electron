@@ -1,0 +1,24 @@
+image: Visual Studio 2017
+
+version: '1.0.{build}'
+
+platform:
+  - x64
+
+cache:
+  - node_modules
+  - '%USERPROFILE%\.electron'
+
+install:
+  - ps: Install-Product node 13 x64
+  - git reset --hard HEAD
+  - npm install npm@6 -g
+  - npm prune
+  - npm install
+
+build_script:
+  - node --version
+  - npm --version
+  - npm run publish
+
+test: off
