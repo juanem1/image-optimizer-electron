@@ -22,3 +22,7 @@ build_script:
   - npm run publish
 
 test: off
+
+artifacts:
+  - path: out
+    name: MyApp
