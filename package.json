@@ -23,19 +23,7 @@
       "makers": [
         {
           "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin",
-            "win32"
-          ]
-        },
-        {
-          "name": "@electron-forge/publisher-github",
-          "config": {
-            "repository": {
-              "owner": "juanem1",
-              "nam": "image-optimizer-electron"
-            }
-          }
+          "platforms": ["darwin", "win32"]
         }
       ]
     }
