@@ -10,6 +10,7 @@ cache:
   - '%USERPROFILE%\.electron'
 
 install:
+  - ps: Install-Product node 13 x64
   - git reset --hard HEAD
   - npm install npm@6 -g
   - npm prune
